@@ -1,0 +1,172 @@
+$darkGray: #2a2a2a;
+$lightBlue:#6ab5f2;
+ nav{
+   display: flex;
+   justify-content: center;
+   font-size: 22px;
+   letter-spacing: 5px;
+      ul{ 
+         .active-link a{
+            color: $lightBlue;
+         }
+         li{
+            margin-left: 20px;
+            a{
+               color: $darkGray;
+               text-transform: uppercase;
+               &:hover{
+                  color: $lightBlue;
+                }
+            }
+      }
+   }
+ }
+.social {
+   width: 50%;
+   margin-top: 3%;
+   text-align: center;
+   h3{
+      color:var(--white);
+      margin-bottom: 3%;
+      font-size: 22px;
+      }
+      a{
+         font-size:50px;
+         padding:4%;
+         margin-bottom: 1%;
+         }
+         p{
+            font-size: 18px;
+            padding:1%;
+            }
+   }
+$color-facebook:#3b5998;
+$color-instagram:#cc2366;
+$color-twitter:#00aced ;
+$color-linkedin:#0A66C2;
+.fa-facebook-square
+   {
+      color:$color-facebook;
+   }
+.fa-instagram{
+      color:$color-instagram
+ }
+.fa-twitter {
+      color:$color-twitter;
+    }
+.fa-linkedin-square {
+      color:$color-linkedin;
+   }
+
+@mixin projekat($slika)
+{
+   background: url($slika) no-repeat;
+   background-size: cover; 
+   background-position: center;
+}
+#one{@include projekat("../img/tvojpotez.jpg")}
+#two{@include projekat("../img/up2date.jpg")}
+#three{@include projekat("../img/gascars.jpg")}
+#four{@include projekat("../img/pecarosi.jpg")}
+$color-purple: #a142f5;
+$color-blue: #2fc0e0;
+$color-dblue: #266ad1;
+$color-label: #000;
+$color-background: #fff;
+#about{
+   padding:40px 0px;
+ }
+ #contact {
+   @extend #about;
+   margin-top: 30px;
+   }
+ #projects {
+   @extend #contact;
+   margin-bottom: 40px;
+   border-top: 1px solid rgba(0, 0, 0, 0.15);
+   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+   background: rgba(166, 202, 222, 0.35);
+   }
+
+.chart {
+   position: relative;
+   padding: 1em;
+   background: $color-background;
+   border-radius: 5px;
+   font-size: 16px;
+   
+   * { box-sizing: border-box; }
+   
+   
+   &:after {
+      content: '';
+      position: absolute;
+      left: 25%;
+      top: 7.5%;
+      transform: translateX(100%);
+      width: 4px;
+      background: #FFF;
+      height: 86%;
+      border-radius: 2px;
+   }
+   
+   .part {
+      display: flex;
+      height: 3em;
+      
+       > .label {
+         flex: 1;
+         flex-basis: 25%;
+         text-align: right;
+         padding-right: 1em;
+         margin: 0.5em 0;
+         height: 2em;
+         line-height: 2em;
+         color: $color-label;
+         font-weight: 600;
+      }
+      
+      .bar {
+         flex: 3;
+         flex-basis: 75%;
+         position: relative;
+         margin: 0.5em 0;
+         
+         &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            border-radius: 0 2px 2px 0;
+            animation: grow 0.5s;
+         }
+         &:hover {
+            border: 1px solid;
+          }
+         
+         
+         &.purple:after { background: $color-purple; }
+         &.blue:after { background: $color-blue; }
+         &.dblue:after { background: $color-dblue; }
+         
+         .label {
+            position: absolute;
+            top: 50%;
+            left: 0.5em;
+            transform: translateX(0%) translateY(-50%);
+            z-index: 1;
+            color: #000;
+            font-weight: 600;
+         }
+      }
+      
+      @for $i from 1 through 100 {
+         &.percent-#{$i} .bar:after { width: $i * 1%; }
+      }
+   }
+}
+
+@keyframes grow {
+   from { width: 0; }
+}

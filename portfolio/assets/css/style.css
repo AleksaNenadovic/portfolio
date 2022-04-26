@@ -1,0 +1,1245 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins-Regular.ttf");
+}
+:root{
+  --black: #000;
+  --white: #fff;
+  --lightGray: #737272;
+  --darkGray: #2a2a2a;
+  --blue: #2268b3;
+  --lightBlue:#6ab5f2;
+  --darkBlue: #1a51ab;
+  --orange: #e6a009;
+
+}
+body{
+  color: var(--lightGray);
+  font-family: "Poppins";
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+.center-block{
+  width: 90%;
+  margin: 0px auto;
+}
+.scenter-block{
+width: 64%;
+margin: 0px auto;
+}
+.d-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.space-between{
+  justify-content: space-between;
+}
+#logo a{
+      font-size: 30px;
+      letter-spacing: 8px;
+      color: var(--black);
+      overflow: hidden;
+      background: linear-gradient(to right,var(--lightBlue) , var(--darkBlue) 50%, var(--lightBlue) 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position 275ms ease;
+      text-decoration: none;
+}
+#logo a:hover{
+      background-position: 0 100%;
+} 
+
+#email p{
+  color: var(--lightBlue);
+  font-size: 24px;
+  
+}
+header{
+  padding: 15px 0px;
+}
+header .center-block{
+  align-items: center;
+}
+#cover{
+  width: 100%;
+  height: 650px;
+  background: url("../img/background.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.transparent-bg{
+  width: 100%;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+#cover .transparent-bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cover-text{
+  width: 53%;
+  text-align: center;
+  
+}
+#cover-text h2{
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 8px;
+  color: var(--darkGray);
+}
+#cover-text hr{
+  border: 2px solid var(--darkGray);
+  width: 85%;
+  display: block;
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+.team-text-content{
+  width: 53%;
+  justify-content: center;
+}
+.team-text-content img{
+max-width: 100%;
+}
+.team-text-content h2{
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 2%;
+  text-align: center;
+  margin-top:2%;
+}
+.team-text-content p{
+  line-height: 26px;
+  
+}
+.container {
+background: var(--white);
+width: 45%;
+}
+
+.container h2 {
+color: var(--lightGray);
+letter-spacing: 1.5px;
+text-transform: uppercase;
+font-weight: 400;
+font-size: 24px;
+margin-bottom: 0px;
+text-align: center;
+}
+#projects h2{
+color: var(--black);
+letter-spacing: 2px;
+text-transform: uppercase;
+font-weight: 400;
+font-size: 28px;
+text-align: center;
+}
+#projects hr{
+border: 1px dashed var(--black);
+width: 25%;
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: auto;
+margin-inline-end: auto;
+margin-bottom: 5%;
+}
+
+.project{
+margin:10px;
+width:23%;
+height: 600px;
+text-align: center;
+border-radius: 5px;
+}
+.project:hover {
+box-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+.project h3 {
+color: var(--orange);
+padding:4%;
+margin-top: 20%;
+text-align: center;
+font-size: 25px;
+background: rgba(0, 0, 0, 0.7);
+}
+.date{
+margin-top: 99%;
+}
+.date h4{
+color: var(--orange);
+text-align: center;
+letter-spacing: 4px;
+font-size: 20px;
+font-weight: 600;
+}
+#picture {
+width:40%;
+}
+#picture img{
+max-width: 100%;
+height: auto;
+border-radius: 10%;
+}
+#form-contact{
+width:54%;
+justify-content: center;
+text-align: center;
+}
+#form-contact h3 {
+font-size: 32px;
+margin-bottom: 4%;
+color: var(--lightBlue);
+}
+.form-class{
+width: 95%;
+margin-bottom: 10px;
+padding: 10px;
+font-size: 18px;
+border: 2px solid var(--lightBlue);
+border-radius: 6px;
+color: var(--lightGray);
+}
+.form-class:hover{
+border-color:  var(--darkBlue);
+}
+#contact textarea {
+line-height: 150%;
+resize: vertical;
+}
+.send-button {
+width: 250px;
+margin-bottom: 10px;
+padding: 10px;
+border: 2px solid var(--lightBlue);
+background-color: var(--lightBlue);
+box-shadow: inset 0 0 0 0 var(--darkBlue);
+transition: 0.3s ease-out;
+border-radius: 6px;
+font-size: 24px;
+color: var(--darkGray);
+outline: none;
+cursor: pointer;
+}
+.send-button:hover {
+box-shadow: inset 250px 0 0 0 var(--darkBlue);
+color: var(--white);
+}
+footer{
+background-color: var(--darkGray);
+}
+.picture{
+width: 48%;
+border-right: 1px solid var(--white);
+display: block;
+
+
+}
+.picture img{
+max-width: 100%;
+height: auto;
+}
+.social {
+width: 50%;
+margin-top: 3%;
+text-align: center;
+}
+.social h3 {
+color:var(--white);
+margin-bottom: 3%;
+font-size: 22px;
+}
+.social a{
+font-size:50px;
+padding:4%;
+margin-bottom: 1%;
+}
+.social p {
+font-size: 18px;
+padding:1%;
+}
+.fa-facebook-square:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin-square:hover
+{
+color:var(--lightGray);
+}
+
+
+/* SCSS DEO */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 22px;
+  letter-spacing: 5px;
+}
+
+nav ul .active-link a {
+  color: #6ab5f2;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #2a2a2a;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #6ab5f2;
+}
+
+.social {
+  width: 50%;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.social h3 {
+  color: var(--white);
+  margin-bottom: 3%;
+  font-size: 22px;
+}
+
+.social a {
+  font-size: 50px;
+  padding: 4%;
+  margin-bottom: 1%;
+}
+
+.social p {
+  font-size: 18px;
+  padding: 1%;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-instagram {
+  color: #cc2366;
+}
+
+.fa-twitter {
+  color: #00aced;
+}
+
+.fa-linkedin-square {
+  color: #0A66C2;
+}
+
+#one {
+  background: url("../img/tvojpotez.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#two {
+  background: url("../img/up2date.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#three {
+  background: url("../img/gascars.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#four {
+  background: url("../img/pecarosi.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#about, #contact, #projects {
+  padding: 40px 0px;
+}
+
+#contact, #projects {
+  margin-top: 30px;
+}
+
+#projects {
+  margin-bottom: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(166, 202, 222, 0.35);
+}
+
+.chart {
+  position: relative;
+  padding: 1em;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.chart * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.chart:after {
+  content: '';
+  position: absolute;
+  left: 25%;
+  top: 7.5%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  width: 4px;
+  background: #FFF;
+  height: 86%;
+  border-radius: 2px;
+}
+
+.chart .part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3em;
+}
+
+.chart .part > .label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  text-align: right;
+  padding-right: 1em;
+  margin: 0.5em 0;
+  height: 2em;
+  line-height: 2em;
+  color: #000;
+  font-weight: 600;
+}
+
+.chart .part .bar {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  position: relative;
+  margin: 0.5em 0;
+}
+
+.chart .part .bar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 0 2px 2px 0;
+  -webkit-animation: grow 0.5s;
+          animation: grow 0.5s;
+}
+
+.chart .part .bar:hover {
+  border: 1px solid;
+}
+
+.chart .part .bar.purple:after {
+  background: #a142f5;
+}
+
+.chart .part .bar.blue:after {
+  background: #2fc0e0;
+}
+
+.chart .part .bar.dblue:after {
+  background: #266ad1;
+}
+
+.chart .part .bar .label {
+  position: absolute;
+  top: 50%;
+  left: 0.5em;
+  -webkit-transform: translateX(0%) translateY(-50%);
+          transform: translateX(0%) translateY(-50%);
+  z-index: 1;
+  color: #000;
+  font-weight: 600;
+}
+
+.chart .part.percent-1 .bar:after {
+  width: 1%;
+}
+
+.chart .part.percent-2 .bar:after {
+  width: 2%;
+}
+
+.chart .part.percent-3 .bar:after {
+  width: 3%;
+}
+
+.chart .part.percent-4 .bar:after {
+  width: 4%;
+}
+
+.chart .part.percent-5 .bar:after {
+  width: 5%;
+}
+
+.chart .part.percent-6 .bar:after {
+  width: 6%;
+}
+
+.chart .part.percent-7 .bar:after {
+  width: 7%;
+}
+
+.chart .part.percent-8 .bar:after {
+  width: 8%;
+}
+
+.chart .part.percent-9 .bar:after {
+  width: 9%;
+}
+
+.chart .part.percent-10 .bar:after {
+  width: 10%;
+}
+
+.chart .part.percent-11 .bar:after {
+  width: 11%;
+}
+
+.chart .part.percent-12 .bar:after {
+  width: 12%;
+}
+
+.chart .part.percent-13 .bar:after {
+  width: 13%;
+}
+
+.chart .part.percent-14 .bar:after {
+  width: 14%;
+}
+
+.chart .part.percent-15 .bar:after {
+  width: 15%;
+}
+
+.chart .part.percent-16 .bar:after {
+  width: 16%;
+}
+
+.chart .part.percent-17 .bar:after {
+  width: 17%;
+}
+
+.chart .part.percent-18 .bar:after {
+  width: 18%;
+}
+
+.chart .part.percent-19 .bar:after {
+  width: 19%;
+}
+
+.chart .part.percent-20 .bar:after {
+  width: 20%;
+}
+
+.chart .part.percent-21 .bar:after {
+  width: 21%;
+}
+
+.chart .part.percent-22 .bar:after {
+  width: 22%;
+}
+
+.chart .part.percent-23 .bar:after {
+  width: 23%;
+}
+
+.chart .part.percent-24 .bar:after {
+  width: 24%;
+}
+
+.chart .part.percent-25 .bar:after {
+  width: 25%;
+}
+
+.chart .part.percent-26 .bar:after {
+  width: 26%;
+}
+
+.chart .part.percent-27 .bar:after {
+  width: 27%;
+}
+
+.chart .part.percent-28 .bar:after {
+  width: 28%;
+}
+
+.chart .part.percent-29 .bar:after {
+  width: 29%;
+}
+
+.chart .part.percent-30 .bar:after {
+  width: 30%;
+}
+
+.chart .part.percent-31 .bar:after {
+  width: 31%;
+}
+
+.chart .part.percent-32 .bar:after {
+  width: 32%;
+}
+
+.chart .part.percent-33 .bar:after {
+  width: 33%;
+}
+
+.chart .part.percent-34 .bar:after {
+  width: 34%;
+}
+
+.chart .part.percent-35 .bar:after {
+  width: 35%;
+}
+
+.chart .part.percent-36 .bar:after {
+  width: 36%;
+}
+
+.chart .part.percent-37 .bar:after {
+  width: 37%;
+}
+
+.chart .part.percent-38 .bar:after {
+  width: 38%;
+}
+
+.chart .part.percent-39 .bar:after {
+  width: 39%;
+}
+
+.chart .part.percent-40 .bar:after {
+  width: 40%;
+}
+
+.chart .part.percent-41 .bar:after {
+  width: 41%;
+}
+
+.chart .part.percent-42 .bar:after {
+  width: 42%;
+}
+
+.chart .part.percent-43 .bar:after {
+  width: 43%;
+}
+
+.chart .part.percent-44 .bar:after {
+  width: 44%;
+}
+
+.chart .part.percent-45 .bar:after {
+  width: 45%;
+}
+
+.chart .part.percent-46 .bar:after {
+  width: 46%;
+}
+
+.chart .part.percent-47 .bar:after {
+  width: 47%;
+}
+
+.chart .part.percent-48 .bar:after {
+  width: 48%;
+}
+
+.chart .part.percent-49 .bar:after {
+  width: 49%;
+}
+
+.chart .part.percent-50 .bar:after {
+  width: 50%;
+}
+
+.chart .part.percent-51 .bar:after {
+  width: 51%;
+}
+
+.chart .part.percent-52 .bar:after {
+  width: 52%;
+}
+
+.chart .part.percent-53 .bar:after {
+  width: 53%;
+}
+
+.chart .part.percent-54 .bar:after {
+  width: 54%;
+}
+
+.chart .part.percent-55 .bar:after {
+  width: 55%;
+}
+
+.chart .part.percent-56 .bar:after {
+  width: 56%;
+}
+
+.chart .part.percent-57 .bar:after {
+  width: 57%;
+}
+
+.chart .part.percent-58 .bar:after {
+  width: 58%;
+}
+
+.chart .part.percent-59 .bar:after {
+  width: 59%;
+}
+
+.chart .part.percent-60 .bar:after {
+  width: 60%;
+}
+
+.chart .part.percent-61 .bar:after {
+  width: 61%;
+}
+
+.chart .part.percent-62 .bar:after {
+  width: 62%;
+}
+
+.chart .part.percent-63 .bar:after {
+  width: 63%;
+}
+
+.chart .part.percent-64 .bar:after {
+  width: 64%;
+}
+
+.chart .part.percent-65 .bar:after {
+  width: 65%;
+}
+
+.chart .part.percent-66 .bar:after {
+  width: 66%;
+}
+
+.chart .part.percent-67 .bar:after {
+  width: 67%;
+}
+
+.chart .part.percent-68 .bar:after {
+  width: 68%;
+}
+
+.chart .part.percent-69 .bar:after {
+  width: 69%;
+}
+
+.chart .part.percent-70 .bar:after {
+  width: 70%;
+}
+
+.chart .part.percent-71 .bar:after {
+  width: 71%;
+}
+
+.chart .part.percent-72 .bar:after {
+  width: 72%;
+}
+
+.chart .part.percent-73 .bar:after {
+  width: 73%;
+}
+
+.chart .part.percent-74 .bar:after {
+  width: 74%;
+}
+
+.chart .part.percent-75 .bar:after {
+  width: 75%;
+}
+
+.chart .part.percent-76 .bar:after {
+  width: 76%;
+}
+
+.chart .part.percent-77 .bar:after {
+  width: 77%;
+}
+
+.chart .part.percent-78 .bar:after {
+  width: 78%;
+}
+
+.chart .part.percent-79 .bar:after {
+  width: 79%;
+}
+
+.chart .part.percent-80 .bar:after {
+  width: 80%;
+}
+
+.chart .part.percent-81 .bar:after {
+  width: 81%;
+}
+
+.chart .part.percent-82 .bar:after {
+  width: 82%;
+}
+
+.chart .part.percent-83 .bar:after {
+  width: 83%;
+}
+
+.chart .part.percent-84 .bar:after {
+  width: 84%;
+}
+
+.chart .part.percent-85 .bar:after {
+  width: 85%;
+}
+
+.chart .part.percent-86 .bar:after {
+  width: 86%;
+}
+
+.chart .part.percent-87 .bar:after {
+  width: 87%;
+}
+
+.chart .part.percent-88 .bar:after {
+  width: 88%;
+}
+
+.chart .part.percent-89 .bar:after {
+  width: 89%;
+}
+
+.chart .part.percent-90 .bar:after {
+  width: 90%;
+}
+
+.chart .part.percent-91 .bar:after {
+  width: 91%;
+}
+
+.chart .part.percent-92 .bar:after {
+  width: 92%;
+}
+
+.chart .part.percent-93 .bar:after {
+  width: 93%;
+}
+
+.chart .part.percent-94 .bar:after {
+  width: 94%;
+}
+
+.chart .part.percent-95 .bar:after {
+  width: 95%;
+}
+
+.chart .part.percent-96 .bar:after {
+  width: 96%;
+}
+
+.chart .part.percent-97 .bar:after {
+  width: 97%;
+}
+
+.chart .part.percent-98 .bar:after {
+  width: 98%;
+}
+
+.chart .part.percent-99 .bar:after {
+  width: 99%;
+}
+
+.chart .part.percent-100 .bar:after {
+  width: 100%;
+}
+
+@-webkit-keyframes grow {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+@media  screen and (max-width: 1441px) { 
+
+  #cover-text h2 {
+      font-size: 34px;
+      letter-spacing: 6px;
+  }
+  .team-text-content h2 {
+      font-size: 20px;
+  }
+  .team-text-content p {
+      line-height: 22px;
+      font-size: 14px;
+  }
+  nav{
+      font-size: 18px;
+      letter-spacing: 3px;
+  }
+  .date {
+      margin-top: 140%;
+
+  }
+  #form-contact h3 {
+      font-size:30px;
+  }
+  
+}
+@media  screen and (max-width: 1025px) { 
+
+  #logo a {
+      font-size: 26px;
+  }
+  #email p {
+      font-size: 20px;
+  }
+  #cover {
+      height: 500px;
+  }
+  #cover-text h2 {
+      font-size: 26px;
+      letter-spacing: 3px;
+  }
+  nav{
+      font-size: 15px;
+      letter-spacing: 0px;
+  }
+  .project {
+      margin: 8px;
+      width: 30%;
+      height: 550px;
+  }
+  .date {
+      margin-top: 136%;
+
+  }
+  #form-contact h3 {
+      font-size:22px;
+  }
+  .form-class {
+      margin-bottom: 8px;
+      padding: 8px;
+      font-size: 14px;
+  }
+  #contact textarea {
+      line-height: 120%;
+  }
+  .social {
+      margin-left: 1%;
+  }
+  .social h3 {
+      font-size: 20px;
+  }
+}
+@media  screen and (max-width: 769px) { 
+  header {
+      padding: 10px 0px;
+  }
+  
+  #logo a {
+      font-size: 22px;
+  }
+  #email p {
+      font-size: 16px;
+  }
+  #cover {
+      height: 400px;
+  }
+  #cover-text h2 {
+      font-size: 22px;
+      letter-spacing: 1px;
+  }
+  nav{
+      font-size: 10px;
+  }
+  .team-text-content {
+      width: 100%;
+  }
+  .container {
+      width: 100%;
+      margin-top: 7%;
+  }
+  .container h2{
+      font-size: 20px;
+  }
+  #projects h2 {
+      font-size: 24px;
+  }
+  .project h3 {
+      font-size:20px;
+      padding:3%;
+  }
+  .date h4 {
+      font-size: 16px;
+  }
+  .project {
+      margin: 8px;
+      width: 40%;
+      height: 350px;
+  }
+  .date {
+      margin-top: 78%;
+
+  }
+  #form-contact h3 {
+      font-size: 16px;
+  }
+  .form-class {
+      margin-bottom: 5px;
+      padding: 5px;
+      font-size: 10px;
+  }
+  #contact textarea {
+      line-height: 100%;
+  }
+  .social h3 {
+      font-size: 16px;
+  }
+  .social a {
+      font-size: 40px;
+      padding: 2%;
+      margin-bottom: 1%;
+  }
+  .social p {
+      font-size: 14px;
+      padding: 1%;
+      margin-bottom: 1%;
+  }
+}
+@media  screen and (max-width: 426px) { 
+  nav ul li{
+      margin-left: 5px;
+    }
+  header {
+      padding: 5px 0px;
+  }
+  #logo a {
+      font-size: 16px;
+      letter-spacing: 2px;
+  }
+  #email p {
+      font-size: 10px;
+  }
+  #cover {
+      height: 200px;
+  }
+  #cover-text h2 {
+      font-size: 12px;
+      letter-spacing: 0px;
+  }
+  #cover-text hr{
+      border: 1px solid var(--darkGray);
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+  }
+  nav{
+      font-size: 7px;
+  }
+  .team-text-content h2 {
+      font-size: 14px;
+  }
+  .team-text-content p {
+      line-height: 16px;
+      font-size: 10px;
+  }
+  .container h2{
+      font-size: 14px;
+  }
+  #projects h2 {
+      font-size: 16px;
+  }
+  .project h3 {
+      font-size:14px;
+      padding:3%;
+  }
+  .date h4 {
+      font-size: 10px;
+  }
+  .project {
+      margin: 8px;
+      width: 40%;
+      height: 200px;
+  }
+  .date {
+      margin-top: 76%;
+  }
+  #form-contact {
+      width: 100%;
+  }
+  #picture {
+      width: 60%;
+      margin: 0 auto;
+      margin-bottom: 5%;
+  }
+  #form-contact h3 {
+      font-size: 16px;
+  }
+  .form-class {
+      margin-bottom: 6px;
+      padding: 6px;
+      font-size: 12px;
+  }
+  #contact textarea {
+      line-height: 85%;
+  }
+  .picture {
+      width: 100%;
+      border:none;
+  }
+  .social {
+      width: 100%;
+  }
+  .chart {
+      font-size: 13px;
+  }
+  
+}
+@media  screen and (max-width: 376px) { 
+  header {
+      padding: 2px 0px;
+  }
+  #cover-text hr{      
+      margin-block-start: 0.5em;
+      margin-block-end: 0.5em;
+  }
+  #logo a {
+      font-size: 14px;
+      letter-spacing: 1px;
+  }
+  #cover {
+      height: 180px;
+  }
+  #cover-text h2 {
+      font-size: 10px;
+  }
+  nav{
+      font-size: 6px;
+  }
+  .team-text-content h2 {
+      font-size: 12px;
+  }
+  .team-text-content p {
+      line-height: 16px;
+      font-size: 9px;
+  }
+  .container h2{
+      font-size: 12px;
+  }
+  #projects h2 {
+      font-size: 14px;
+  }
+  .project h3 {
+      font-size:12px;;
+  }
+  .date h4 {
+      font-size: 8px;
+  }
+  .date {
+      margin-top: 95%;
+  }
+  .chart {
+      font-size: 10px;
+  }
+  #form-contact h3 {
+      font-size: 14px;
+  }
+  .form-class {
+      margin-bottom: 6px;
+      padding: 6px;
+      font-size: 9px;
+  }
+  #contact textarea {
+      line-height: 75%;
+  }
+  .social h3 {
+      font-size: 14px;
+  }
+  .social p {
+      font-size: 12px;  
+  }
+
+}
+@media  screen and (max-width: 321px) { 
+
+  header {
+      padding: 1px 0px;
+  }
+  #logo a {
+      font-size: 13px;
+      letter-spacing: 0px;
+  }
+  #email p{
+      font-size: 8px;
+  }
+  #cover {
+      height: 170px;
+  }
+  #cover-text h2 {
+      font-size: 10px;
+  }
+  
+  nav{
+      font-size: 5px;
+  }
+  .date {
+      margin-top: 115%;
+  }
+  #form-contact h3 {
+      font-size: 12.5px;
+  }
+  .send-button {
+      width: 150px;
+      font-size: 20px;
+  }
+  .send-button:hover {
+      box-shadow: inset 150px 0 0 0 var(--darkBlue);
+  }
+  .social h3 {
+      font-size: 12px;
+  }
+  .social a {
+      font-size: 35px;
+  }
+  .social p {
+      font-size: 10px;  
+  }
+
+
+}
+
